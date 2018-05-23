@@ -1,0 +1,16 @@
+---
+title: The Wedding
+timezone: GMT
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+email: naamanh10@gmail.com
+description: The Wedding of the year
+baseurl: ''
+url:
+markdown: kramdown
