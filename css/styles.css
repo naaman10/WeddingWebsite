@@ -1,15 +1,6 @@
 body {
-  background: -moz-linear-gradient(-45deg, #273631 0%, #2e4e44 32%, #2c3431 59%, #312c34 89%, #373043 100%);
-  /* Chrome,Safari4+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #273631), color-stop(32%, #2e4e44), color-stop(59%, #2c3431), color-stop(89%, #312c34), color-stop(100%, #373043));
-  /* Chrome10+,Safari5.1+ */
-  background: -webkit-linear-gradient(-45deg, #273631 0%, #2e4e44 32%, #2c3431 59%, #312c34 89%, #373043 100%);
-  /* Opera 11.10+ */
-  background: -o-linear-gradient(-45deg, #273631 0%, #2e4e44 32%, #2c3431 59%, #312c34 89%, #373043 100%);
-  /* IE10+ */
-  background: -ms-linear-gradient(-45deg, #273631 0%, #2e4e44 32%, #2c3431 59%, #312c34 89%, #373043 100%);
   /* W3C */
-  background: linear-gradient(135deg, #273631 0%,#2e4e44 32%,#2c3431 59%,#312c34 89%,#373043 100%);
+  background: linear-gradient(135deg, #372e44 0%,#36333a 14%,#36333a 14%,#6d5d89 100%);
   height: 100%;
   font-family: 'Raleway', sans-serif;
   padding-bottom: 70px;
@@ -389,4 +380,25 @@ iframe#gmap_canvas {
 }
 .timeline-image h4.end{
   margin-top: -10px;
+}
+#rsvp form {
+  width: 100%;
+}
+.form-control {
+  border: 2px solid black;
+  border-radius: 0;
+}
+#facilities {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+#facilityItem {
+  display: inline-flex;
+  width: 49%;
+}
+.thingsImage {
+  width: 100%;
 }

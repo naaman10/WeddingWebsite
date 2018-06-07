@@ -14,3 +14,5 @@ description: The Wedding of the year
 baseurl: ''
 url:
 markdown: kramdown
+plugins:
+  - hawkins
