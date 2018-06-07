@@ -1,0 +1,66 @@
+<section id="rsvp">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <h1>R.S.V.Poo</h1>
+              <form method="post" action="/success.html">
+                <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input class="form-control" id="name" type="text" name="name" placeholder="Enter name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input class="form-control" id="email" type="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card bg-light mb-3">
+                    <div class="card-body">
+                      <p class="lead">Meal Options</p>
+                      <div class="form-group">
+                        <p>Starter</p>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="starterMeat" name="starterMeat" class="custom-control-input">
+                        <label class="custom-control-label" for="starterMeat">Meat</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="starterVeg" name="starterVeg" class="custom-control-input">
+                        <label class="custom-control-label" for="starterVeg">Vegetarian</label>
+                      </div>
+                    </div>
+                      <div class="form-group">
+                        <p>Main</p>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="mainMeat" name="mainMeat" class="custom-control-input">
+                        <label class="custom-control-label" for="mainMeat">Meat</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="mainFish" name="mainFish" class="custom-control-input">
+                        <label class="custom-control-label" for="mainFish">Fish</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="mainVeg" name="mainVeg" class="custom-control-input">
+                        <label class="custom-control-label" for="mainVeg">Vegetarian</label>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <input type="text" name="_gotcha" style="display: none;">
+                  <input type="submit" class="btn btn-primary" value="Send R.S.V.P">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
