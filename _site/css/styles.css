@@ -402,3 +402,38 @@ iframe#gmap_canvas {
 .thingsImage {
   width: 100%;
 }
+.mealOptions,.declineMessage {
+  display: none;
+  width: 100%;
+}
+input#numberPeople {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 0;
+  border-right: 0;
+  width: 70px;
+  text-align: center;
+}
+#buttonUp,#buttonDown {
+  width: 40px;
+  height: 40px;
+}
+.mealOptions .form-group {
+  margin-bottom: 3rem;
+}
+#mealOptionsList {
+  margin-top: 20px;
+}
+#mealOptionsList li.hide {
+  display: none;
+}
+#mealOptionsList li.show {
+  display: inline-block;
+  list-style: none;
+}
+input#numberPeople::-webkit-outer-spin-button {
+    display: none !important;
+}
+input#numberPeople::-webkit-inner-spin-button {
+    display: none !important;
+}
