@@ -57,7 +57,13 @@ $(document).ready(function() {
   $('#buttonUp').on('click', function() {
     numberPeople++;
     $("#numberPeople").val(numberPeople);
-    $("#mealOptionsList").append('<li class="list-group-item" id="extraPerson">Person ' + numberPeople + '</li>');
+    var htmlString = '<li class="list-group-item" id="extraPerson' + numberPeople + '">'+'<p class="personName' + numberPeople + '">Person ' + numberPeople + '</p>'+'<fieldset class="form-group"><div class="row"><div class="col-sm-12"><div class="form-group"><label for="name">Name</label>'+'<input class="form-control" id="name' + numberPeople +'" type="text" name="name' + numberPeople +'" placeholder="Enter name"></div>'+'<div class="starterMeal"><p>Starter</p><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"'+'name="inlinecheckboxOptions" id="' + numberPeople + 'inlinecheckbox1' + numberPeople + '" value="option1"><label class="form-check-label" for="' + numberPeople + 'inlinecheckbox1' + numberPeople + '">Meat Option</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="inlinecheckboxOptions" id="'+ numberPeople;
+
+    var htmlString2 = ' inlinecheckbox2' + numberPeople + '" value="option2"><label class="form-check-label" for="' + numberPeople + 'inlinecheckbox2' + numberPeople + '">Vegetarian Option</label></div></div><div class="mainMeal">'+'<p>Main</p><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="inlinecheckboxOptions" id="' + numberPeople + 'inlinecheckbox1'+'" value="option1"><label class="form-check-label" for="' + numberPeople + 'inlinecheckbox1'+'">Meat Option</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="inlinecheckboxOptions" id="' + numberPeople + 'inlinecheckbox2'+'" value="option2"><label class="form-check-label" for="' + numberPeople + 'inlinecheckbox2'+'">Fish Option</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="inlinecheckboxOptions" id="' + numberPeople +
+    'inlinecheckbox3" value="option2"><label class="form-check-label" for="';
+
+    var htmlString3 = numberPeople + 'inlinecheckbox3' + numberPeople + '">Vegetarian Option</label></div></div></div></div></fieldset></li>';
+    $("#mealOptionsList").append(htmlString + htmlString2 + htmlString3);
     event.preventDefault();
     console.log("People" + numberPeople);
     if (numberPeople >= 2) {
@@ -84,4 +90,13 @@ $(document).ready(function() {
       $("#buttonUp").removeAttr("disabled");
     }
   });
+});
+
+$("#name").change(function() {
+  var name = $("#name").val();
+  if (name => "" ) {
+    var name = $("#name").val();
+    console.log(name);
+    $(".personName1").text(name);
+  }
 });

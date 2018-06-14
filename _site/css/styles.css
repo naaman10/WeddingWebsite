@@ -413,13 +413,14 @@ input#numberPeople {
   border-right: 0;
   width: 70px;
   text-align: center;
+  border-radius: 0;
 }
 #buttonUp,#buttonDown {
   width: 40px;
   height: 40px;
 }
 .mealOptions .form-group {
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
 }
 #mealOptionsList {
   margin-top: 20px;
@@ -430,6 +431,12 @@ input#numberPeople {
 #mealOptionsList li.show {
   display: inline-block;
   list-style: none;
+}
+.starterMeal, .mainMeal {
+  padding: 4px;
+  margin-top: 5px;
+  background-color: #eee;
+  border-radius: 4px;
 }
 input#numberPeople::-webkit-outer-spin-button {
     display: none !important;
