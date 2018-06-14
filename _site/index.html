@@ -297,16 +297,18 @@
         <div class="card">
           <div class="card-body">
             <h1>R.S.V.P</h1>
-              <form method="post" action="/success.html">
+              <form method="post">
                 <div class="row">
                 <div class="col-12 col-sm-6">
                   <div class="form-group">
                     <label for="name">Name</label>
                     <input class="form-control" id="name" type="text" name="name" placeholder="Enter name">
+                    <div class="invalid-feedback">Please enter your name.</div>
                   </div>
                   <div class="form-group">
                     <label for="email">Email Address</label>
                     <input class="form-control" id="email" type="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                    <div class="invalid-feedback">Please enter your email address.</div>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6">
@@ -330,7 +332,7 @@
                             </div>
                             <div class="mealOptions">
                               <div class="form-group">
-                                <label for="spinner">Add People</label>
+                                <label for="spinner">Add Guests</label>
                                 <div class="input-group">
                                   <button class="btn btn-default disabled" id="buttonDown" disabled><i class="fas fa-minus"></i></button>
                                   <input type="number" value="" max="5" min="1" step="1" id="numberPeople" />
@@ -338,10 +340,43 @@
                                 </div>
                               </div>
                               <ul class="list-group" id="mealOptionsList">
-                                <li class="list-group-item" id="person1">Person 1</li>
+                                <li class="list-group-item" id="person1">
+                                  <p class="personName1">Guest 1</p>
+                                  <fieldset class="form-group">
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <div class="starterMeal">
+                                        <p>Starter</p>
+                                        <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" name="inlinecheckboxOptions" id="inlinecheckbox11" value="option1">
+                                        <label class="form-check-label" for="1inlinecheckbox11">Meat Option</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" name="inlinecheckboxOptions" id="2inlinecheckbox11" value="option2">
+                                        <label class="form-check-label" for="2inlinecheckbox11">Vegetarian Option</label>
+                                      </div>
+                                      </div>
+                                      <div class="mainMeal">
+                                        <p>Main</p>
+                                        <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" name="inlinecheckboxOptions" id="3inlinecheckbox11" value="option1">
+                                        <label class="form-check-label" for="3inlinecheckbox11">Meat Option</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" name="inlinecheckboxOptions" id="4inlinecheckbox11" value="option2">
+                                        <label class="form-check-label" for="4inlinecheckbox1">Fish Option</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" name="inlinecheckboxOptions" id="4inlinecheckbox11" value="option2">
+                                        <label class="form-check-label" for="4inlinecheckbox11">Vegetarian Option</label>
+                                      </div>
+                                    </div>
+                                      </div>
+                                    </div>
+                                  </fieldset>
 
 
-
+                                </li>
                               </ul>
                           </div>
                         </div>
@@ -403,7 +438,7 @@
     <script src="/scripts/jquery.cookie.js"></script>
     <script src="/scripts/scroll.js"></script>
     <script src="/scripts/scripts.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     </body>
 </html>
