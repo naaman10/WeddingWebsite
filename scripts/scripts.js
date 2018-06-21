@@ -100,3 +100,6 @@ $("#name").change(function() {
     $(".personName1").text(name);
   }
 });
+$(document).ready(function() {
+  $(".otherForm").remove();
+});

@@ -394,6 +394,97 @@
     </div>
   </div>
 </section>
+<form class="otherForm" name="attendingResponses" method="POST" netlify="">
+                <div class="row">
+                <div class="col-12 col-sm-6">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input class="form-control" id="name" type="text" name="name" placeholder="Enter name">
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input class="form-control" id="email" type="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                    <div class="invalid-feedback">Please enter your email address.</div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="card bg-light mb-3">
+                    <div class="card-body">
+                      <h2>Attendance</h2>
+                      <fieldset class="form-group">
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="declined">
+                              <label class="form-check-label" for="gridRadios1">Regretfully decline</label>
+                            </div>
+                            <div class="form-group declineMessage" style="display: none;">
+                              <label for="message">Message</label>
+                              <textarea class="form-control" id="message" name="declineMessage" rows="3"></textarea>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="selectedAttend">
+                              <label class="form-check-label" for="gridRadios2">Attending</label>
+                            </div>
+                            <div class="mealOptions" style="display: block;">
+                              <div class="form-group">
+                                <label for="spinner">Add Guests</label>
+                                <div class="input-group">
+                                  <button class="btn btn-default" id="buttonDown"><i class="fas fa-minus"></i></button>
+                                  <input type="number" value="" max="5" min="1" step="1" id="numberPeople">
+                                  <button class="btn btn-default disabled" id="buttonUp" disabled=""><i class="fas fa-plus"></i></button>
+                                </div>
+                              </div>
+                              <ul class="list-group" id="mealOptionsList">
+                                <li class="list-group-item" id="person1">
+                                  <p class="personName1">Guest 1</p>
+                                  <fieldset class="form-group">
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <div class="starterMeal">
+                                        <p>Starter</p>
+                                        <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" name="starterMeat1" id="inlinecheckbox11" value="option1">
+                                        <label class="form-check-label" for="1inlinecheckbox11">Meat Option</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" name="starterVeg1" id="2inlinecheckbox11" value="option2">
+                                        <label class="form-check-label" for="2inlinecheckbox11">Vegetarian Option</label>
+                                      </div>
+                                      </div>
+                                      <div class="mainMeal">
+                                        <p>Main</p>
+                                        <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" name="mainMeat1" id="3inlinecheckbox11" value="option1">
+                                        <label class="form-check-label" for="3inlinecheckbox11">Meat Option</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" name="mainFish1" id="4inlinecheckbox11" value="option2">
+                                        <label class="form-check-label" for="4inlinecheckbox1">Fish Option</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" name="mainVeg1" id="4inlinecheckbox11" value="option2">
+                                        <label class="form-check-label" for="4inlinecheckbox11">Vegetarian Option</label>
+                                      </div>
+                                    </div>
+                                      </div>
+                                    </div>
+                                  </fieldset>
+
+
+                                </li>
+                              <li class="list-group-item" id="extraPerson2"><p class="personName2">Guest 2</p><fieldset class="form-group"><div class="row"><div class="col-sm-12"><div class="form-group"><label for="name">Name</label><input class="form-control" id="name2" type="text" name="name2" placeholder="Enter name"></div><div class="starterMeal"><p>Starter</p><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="starterMeat2" id="2inlinecheckbox12" value="option1"><label class="form-check-label" for="2inlinecheckbox12">Meat Option</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="starterVeg2" id="2 inlinecheckbox22" value="option2"><label class="form-check-label" for="2inlinecheckbox22">Vegetarian Option</label></div></div><div class="mainMeal"><p>Main</p><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="mainMeat2" id="2inlinecheckbox1" value="option1"><label class="form-check-label" for="2inlinecheckbox1">Meat Option</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="mainFish2" id="2inlinecheckbox2" value="option2"><label class="form-check-label" for="2inlinecheckbox2">Fish Option</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="mainVeg2" id="2inlinecheckbox3" value="option2"><label class="form-check-label" for="2inlinecheckbox32">Vegetarian Option</label></div></div></div></div></fieldset></li><li class="list-group-item" id="extraPerson3"><p class="personName3">Guest 3</p><fieldset class="form-group"><div class="row"><div class="col-sm-12"><div class="form-group"><label for="name">Name</label><input class="form-control" id="name3" type="text" name="name3" placeholder="Enter name"></div><div class="starterMeal"><p>Starter</p><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="starterMeat3" id="3inlinecheckbox13" value="option1"><label class="form-check-label" for="3inlinecheckbox13">Meat Option</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="starterVeg3" id="3 inlinecheckbox23" value="option2"><label class="form-check-label" for="3inlinecheckbox23">Vegetarian Option</label></div></div><div class="mainMeal"><p>Main</p><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="mainMeat3" id="3inlinecheckbox1" value="option1"><label class="form-check-label" for="3inlinecheckbox1">Meat Option</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="mainFish3" id="3inlinecheckbox2" value="option2"><label class="form-check-label" for="3inlinecheckbox2">Fish Option</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="mainVeg3" id="3inlinecheckbox3" value="option2"><label class="form-check-label" for="3inlinecheckbox33">Vegetarian Option</label></div></div></div></div></fieldset></li><li class="list-group-item" id="extraPerson4"><p class="personName4">Guest 4</p><fieldset class="form-group"><div class="row"><div class="col-sm-12"><div class="form-group"><label for="name">Name</label><input class="form-control" id="name4" type="text" name="name4" placeholder="Enter name"></div><div class="starterMeal"><p>Starter</p><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="starterMeat4" id="4inlinecheckbox14" value="option1"><label class="form-check-label" for="4inlinecheckbox14">Meat Option</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="starterVeg4" id="4 inlinecheckbox24" value="option2"><label class="form-check-label" for="4inlinecheckbox24">Vegetarian Option</label></div></div><div class="mainMeal"><p>Main</p><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="mainMeat4" id="4inlinecheckbox1" value="option1"><label class="form-check-label" for="4inlinecheckbox1">Meat Option</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="mainFish4" id="4inlinecheckbox2" value="option2"><label class="form-check-label" for="4inlinecheckbox2">Fish Option</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="mainVeg4" id="4inlinecheckbox3" value="option2"><label class="form-check-label" for="4inlinecheckbox34">Vegetarian Option</label></div></div></div></div></fieldset></li><li class="list-group-item" id="extraPerson5"><p class="personName5">Guest 5</p><fieldset class="form-group"><div class="row"><div class="col-sm-12"><div class="form-group"><label for="name">Name</label><input class="form-control" id="name5" type="text" name="name5" placeholder="Enter name"></div><div class="starterMeal"><p>Starter</p><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="starterMeat5" id="5inlinecheckbox15" value="option1"><label class="form-check-label" for="5inlinecheckbox15">Meat Option</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="starterVeg5" id="5 inlinecheckbox25" value="option2"><label class="form-check-label" for="5inlinecheckbox25">Vegetarian Option</label></div></div><div class="mainMeal"><p>Main</p><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="mainMeat5" id="5inlinecheckbox1" value="option1"><label class="form-check-label" for="5inlinecheckbox1">Meat Option</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="mainFish5" id="5inlinecheckbox2" value="option2"><label class="form-check-label" for="5inlinecheckbox2">Fish Option</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="mainVeg5" id="5inlinecheckbox3" value="option2"><label class="form-check-label" for="5inlinecheckbox35">Vegetarian Option</label></div></div></div></div></fieldset></li></ul>
+                          </div>
+                        </div>
+                      </div></fieldset>
+                    </div>
+                  </div>
+                  <input type="text" name="_gotcha" style="display: none;">
+                  <input type="submit" class="btn btn-primary" value="Send R.S.V.P">
+                </div>
+
+            </div></form>
 
 
 
